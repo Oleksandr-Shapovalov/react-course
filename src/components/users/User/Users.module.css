@@ -1,0 +1,84 @@
+.userItem {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.actions {
+  min-width: 114px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex: 0 1 15%;
+}
+.boxImg {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+.boxImg img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.follow {
+  background: transparent;
+  border: rgba(158, 153, 181, 0.826) 1px solid;
+  color: rgba(158, 153, 181, 0.826);
+  font-size: 1.1rem;
+  font-weight: 300;
+  display: block;
+  padding: 3px 15px;
+  transition: all 0.3s ease-in-out;
+}
+.follow:hover {
+  color: rgba(38, 38, 38, 0.637);
+  background: rgba(158, 153, 181, 0.826);
+}
+.follow.touch {
+  color: rgba(38, 38, 38, 0.637);
+  background: rgba(158, 153, 181, 0.826);
+}
+
+.info {
+  border-radius: 3px;
+  align-self: stretch;
+  padding: 15px;
+  flex: 0 1 85%;
+
+  background: rgba(38, 38, 38, 0.637);
+  color: rgb(166, 166, 166);
+}
+.mainInfo {
+  justify-content: space-between;
+  display: flex;
+  margin-bottom: 5px;
+}
+.location {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+.name {
+  font-weight: 300;
+  font-size: 2rem;
+}
+.status {
+  font-weight: 600;
+}
+.country {
+  margin-bottom: 5px;
+}
+.city {
+}
+.title {
+}
+@media (max-width: 1200px) {
+  .info {
+    margin-left: 20px;
+  }
+}

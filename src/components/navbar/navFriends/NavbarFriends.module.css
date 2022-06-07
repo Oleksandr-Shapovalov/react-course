@@ -1,0 +1,59 @@
+.friendsWrapper {
+}
+.title {
+  font-size: 1.65rem;
+  color: rgb(166, 166, 166);
+  margin: 25px 0 15px 0;
+}
+.friends {
+  padding-left: 0;
+  display: flex;
+  align-items: center;
+  overflow-x: auto;
+  width: 100%;
+  padding-bottom: 10px;
+}
+.friends::-webkit-scrollbar {
+  height: 8px;
+}
+.friends::-webkit-scrollbar-track {
+  transition: all 0.2s ease-in-out;
+  background: rgba(38, 38, 38, 0.637);
+  border-radius: 35px;
+}
+.friends::-webkit-scrollbar-thumb {
+  background: rgba(166, 166, 166, 1);
+  border-radius: 35px;
+}
+.friends::-webkit-scrollbar-thumb:hover {
+  background: rgba(200, 200, 200, 1);
+}
+.friend {
+}
+.friend:not(:last-child) {
+  margin-right: 10px;
+}
+.avaBox {
+  margin: auto;
+  overflow: hidden;
+  height: 50px;
+  width: 50px;
+  position: relative;
+  border-radius: 50%;
+}
+.avaBox img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  object-fit: contain;
+}
+.name {
+  text-align: center;
+  font-weight: 300;
+  color: rgb(166, 166, 166);
+  font-size: 1.1rem;
+}

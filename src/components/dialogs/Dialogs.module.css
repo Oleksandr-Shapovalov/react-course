@@ -1,0 +1,62 @@
+.dialogs {
+  display: grid;
+  grid-template-columns: 3fr 9fr;
+}
+.dialogItems {
+  max-width: 100%;
+  border-right: 1px solid rgba(166, 166, 166, 0.448);
+  height: 100vh;
+  overflow-y: auto;
+}
+.messageContainer {
+  height: 90vh;
+  padding: 10px 10px 0 10px;
+  display: flex;
+  flex-direction: column;
+}
+.messages {
+  flex: 1 1 auto;
+  max-height: 80%;
+  overflow-y: auto;
+
+  padding-right: 10px;
+  margin-bottom: 15px;
+}
+.postForm {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.text {
+  flex: 0 1 90%;
+  display: flex;
+  padding: 3px 5px;
+  font-size: 1rem;
+  background: rgb(89, 89, 89, 0.4);
+  color: rgb(157, 157, 157);
+
+  max-height: 65px;
+  resize: vertical;
+}
+.button {
+  display: flex;
+  flex: 0 1 10%;
+  align-self: stretch;
+  background: transparent;
+  border: rgba(158, 153, 181, 0.826) 1px solid;
+  color: rgba(158, 153, 181, 0.826);
+  font-size: 1.1rem;
+  font-weight: 300;
+  display: block;
+  padding: 3px 15px;
+  transition: all 0.3s ease-in-out;
+}
+.button:hover {
+  color: rgba(38, 38, 38, 0.637);
+  background: rgba(158, 153, 181, 0.826);
+}
+.button.touch {
+  color: rgba(38, 38, 38, 0.637);
+  background: rgba(158, 153, 181, 0.826);
+}

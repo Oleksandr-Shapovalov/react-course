@@ -1,0 +1,43 @@
+.Wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 90vh;
+}
+.usersContainer {
+  flex: 1 1 auto;
+  padding: 15px;
+  padding-bottom: 0;
+  height: 80vh;
+  overflow-y: auto;
+}
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+}
+.pagination_item {
+  cursor: pointer;
+  transition: all 0.25s ease-in-out;
+  color: rgba(158, 153, 181, 0.826);
+  font-size: 1.4rem;
+  font-weight: 300;
+  padding: 5px 15px;
+  background: transparent;
+  border: 1px solid rgba(158, 153, 181, 0.826);
+}
+.pagination_item:not(:last-child) {
+  margin-right: 5px;
+}
+.pagination_item_selected {
+  background: rgba(158, 153, 181, 0.826);
+  color: rgba(36, 36, 36, 0.769);
+
+  font-weight: 500;
+}
+
+.pagination_item_disabled {
+  color: rgba(158, 153, 181, 0.3);
+  background: rgba(158, 153, 181, 0.15);
+  border: 1px solid rgba(158, 153, 181, 0.15);
+}

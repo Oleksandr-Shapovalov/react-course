@@ -1,0 +1,10 @@
+export const ADD_POST = "ADD_POST";
+export const SET_NEW_POST_TEXT = "SET_NEW_POST_TEXT";
+export const ADD_MESSAGE = "ADD_MESSAGE";
+export const SET_NEW_MESSAGE_TEXT = "SET_NEW_MESSAGE_TEXT";
+export const FOLLOW_TOGGLE = "FOLLOW_TOGGLE";
+export const SET_USERS = "SET_USERS";
+export const SET_USER_COUNT = "SET_USER_COUNT";
+export const SET_CURRENT_PAGE = "SET_CURRENT_PAGE";
+export const USERS_CLEAN = "USERS_CLEAN";
+export const IS_LOADING_TOGGLE = "IS_LOADING_TOGGLE";

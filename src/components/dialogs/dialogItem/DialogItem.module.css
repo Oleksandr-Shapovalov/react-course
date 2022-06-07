@@ -1,0 +1,50 @@
+.item {
+  transition: all 0.2s ease-in-out;
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  border-bottom: 1px solid rgba(166, 166, 166, 0.448);
+}
+.item:not(:last-child) {
+}
+.item .name {
+  transform: scale(1);
+  transition: all 0.2s ease-in-out;
+  display: block;
+  font-weight: 300;
+  font-size: 1.35rem;
+  text-decoration: none;
+  color: rgb(166, 166, 166);
+}
+.item.active .name {
+  font-weight: 600;
+  color: rgb(197, 197, 197);
+  transform: scale(1.1);
+}
+.item.active {
+  border-bottom: 2px solid rgba(166, 166, 166, 0.748);
+}
+.item.active .avaBox {
+  transform: scale(1.1);
+}
+.avaBox {
+  transform: scale(1);
+  transition: all 0.2s ease-in-out;
+  width: 50px;
+  height: 50px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.avaBox img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+a {
+  text-decoration: none;
+}

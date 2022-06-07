@@ -1,0 +1,124 @@
+.wrapper {
+  position: relative;
+
+  grid-area: n;
+  background: rgba(38, 38, 38, 0.678);
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+.nav {
+  transition: all 0.4s ease-in-out;
+  padding: 30px 30px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.toggleSidebar {
+  transition: all 0.4s ease-in-out;
+
+  transform: scale(0);
+  position: absolute;
+  width: 40px;
+  height: 3px;
+  border-radius: 10px;
+  top: 18px;
+  right: 15px;
+  z-index: 50;
+  background: rgb(166, 166, 166);
+}
+.toggleSidebar::after,
+.toggleSidebar::before {
+  transition: all 0.4s ease-in-out;
+
+  z-index: 5;
+  background: rgb(166, 166, 166);
+  position: fixed;
+  content: "";
+  transition: all 0.15s ease-in-out;
+  width: 40px;
+  height: 3px;
+}
+.toggleSidebar::after {
+  top: -10px;
+}
+.toggleSidebar::before {
+  top: 10px;
+}
+.lock {
+  overflow: hidden;
+}
+@media (max-width: 767px) {
+  .nav {
+    left: -200px;
+  }
+  .nav.navOpen {
+    left: 0px;
+    height: calc(100vh - 50px);
+    width: 100vw;
+    background: rgb(55, 55, 55);
+    z-index: 3;
+  }
+  .toggleSidebar.toggled {
+    right: 55px;
+    width: 0px;
+    top: 100px;
+  }
+  .toggleSidebar.toggled::after {
+    top: 0;
+    transform: rotate(45deg);
+  }
+  .toggleSidebar.toggled::before {
+    top: 0;
+    transform: rotate(-45deg);
+  }
+  .toggleSidebar {
+    transform: scale(1);
+  }
+}
+.item {
+  transition: all 0.15s ease-in-out;
+}
+.item a {
+  display: block;
+  text-decoration: none;
+  font-size: 1.5rem;
+  transition: all 0.15s ease-in-out;
+  color: rgb(166, 166, 166);
+  transform: translateX(0);
+}
+
+.item a:not(.active):hover {
+  transform: translateX(6px);
+}
+
+.item ~ .item {
+  margin-top: 10px;
+}
+
+a.active {
+  font-weight: 600;
+  color: rgb(197, 197, 197);
+  position: relative;
+}
+a.active::after {
+  z-index: 5;
+  content: "";
+  animation: item_active 0.5s ease-in;
+  position: absolute;
+  top: 0.3rem;
+  left: -20px;
+  height: 1.5rem;
+  width: 3px;
+  background: rgb(197, 197, 197);
+}
+@keyframes item_active {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

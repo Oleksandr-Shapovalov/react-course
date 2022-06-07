@@ -1,0 +1,12 @@
+.header {
+  background: rgba(13, 13, 13, 0.725);
+  grid-area: h;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  margin-bottom: 10px;
+}
+
+.header img {
+  width: 60px;
+}
